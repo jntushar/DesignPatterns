@@ -1,9 +1,9 @@
 package CreationalDesignPatterns.FactoryPattern;
 
-public class Main {
+public class LogisticsApp {
     public static void main(String[] args) {
         LogisticsFactory logisticsFactory = new LogisticsFactory();
-        Transport transport = logisticsFactory.factory(Logistics.ROAD);
-        transport.deliver();
+        Transport airplane = logisticsFactory.factory(Logistics.AIR);
+        airplane.deliver();
     }
 }

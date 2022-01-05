@@ -1,8 +1,8 @@
 package CreationalDesignPatterns.FactoryPattern;
 
-public class SeaLogistics extends LogisticsFactory {
+public class AirLogistics extends LogisticsFactory{
 
     public Transport factory(){
-        return new Ship();
+        return new Airplanes();
     }
 }

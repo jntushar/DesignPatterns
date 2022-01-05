@@ -7,7 +7,10 @@ public class LogisticsFactory {
             return new RoadLogistics().factory();
         }else if(logistics == Logistics.SEA){
             return new SeaLogistics().factory();
+        }else if(logistics == Logistics.AIR){
+            return new AirLogistics().factory();
+        }else {
+            return null;
         }
-        return null;
     }
 }
